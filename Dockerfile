@@ -50,7 +50,7 @@ ADD uwsgi.xml /srv/www/moin/wiki/uwsgi.xml
 # default set for nginx
 ADD default /etc/nginx/sites-available/default
 
-VOLUME /srv/www/moin/wiki
+VOLUME /srv/www/moin/wiki/data
 EXPOSE 80
 
 CMD service nginx start && uwsgi -x /srv/www/moin/wiki/uwsgi.xml
