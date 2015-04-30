@@ -1,0 +1,11 @@
+server {
+        listen 80 default_server;
+
+        server_name localhost;
+
+        location / {
+                include uwsgi_params;
+                uwsgi_pass unix:///srv/www/moin/moin.sock;
+                uwsgi_modifier1 30;
+        }
+}
