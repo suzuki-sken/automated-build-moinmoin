@@ -20,8 +20,8 @@ RUN mkdir -p /srv/www/moin
 
 # download and install moin moin
 WORKDIR /tmp
-#ADD http://static.moinmo.in/files/moin-1.9.8.tar.gz /tmp/moin-1.9.8.tar.gz
-COPY moin-1.9.8.tar.gz /tmp/moin-1.9.8.tar.gz
+ADD http://static.moinmo.in/files/moin-1.9.8.tar.gz /tmp/moin-1.9.8.tar.gz
+#COPY moin-1.9.8.tar.gz /tmp/moin-1.9.8.tar.gz
 RUN tar xfz moin-1.9.8.tar.gz
 WORKDIR /tmp/moin-1.9.8
 RUN python setup.py install
