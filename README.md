@@ -1,6 +1,6 @@
 # docker-moinmoin
 
-docker image for [MoinMoin 1.9.8](https://moinmo.in/) with Python2.7.6, uWSGI1.9.17 and nginx1.4.6 on ubuntu14.04 base image.
+test image for [MoinMoin 1.9.8](https://moinmo.in/) with Python2.7.6, uWSGI1.9.17 and nginx1.4.6 on ubuntu14.04 base image.
 
 ## Usage
 
